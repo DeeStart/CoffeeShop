@@ -96,6 +96,15 @@ section {
   margin: 0 1rem;
   font-size: 1.7rem;
   color: var(--main-color);
+  transition: all 0.2s linear;
+}
+
+.header .navbar a:first-child {
+  border-bottom: var(--border);
+}
+
+.header .navbar a:hover{
+  border-bottom: var(--border);
 }
 
 .header .btn {
@@ -375,6 +384,80 @@ section {
     background: var(--main-color);
 }
 
+.book {
+  background:url(../image/book-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.book form {
+  margin: 0 auto 2rem auto;
+  max-width:60rem;
+  border-radius: var(--border-radius);
+  padding:3rem;
+  border: var(--border);
+}
+
+.book form .box {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border:var(--border);
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  background: none;
+  text-transform: none;
+  color: var(--main-color);
+  margin: .7rem 0;
+}
+
+.book form .box:focus {
+  border:var(--border-hover);
+}
+
+.book form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem , 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding:1rem 0;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  color: var(--main-color);
+}
+
+.footer .copyright span {
+  border-bottom: var(--border-hover);
+}
+
 /* Media Queries */
 /* Tablet */
 @media (max-width: 991px) {
@@ -426,7 +509,9 @@ section {
     margin: 0;
     padding: 1.5rem 2rem;
   }
+.header .navbar a:hover {
 
+}
   .home {
     text-align: center;
   }

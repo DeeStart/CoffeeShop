@@ -496,10 +496,12 @@ section {
     left: 0;
     right: 0;
     background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
   .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
